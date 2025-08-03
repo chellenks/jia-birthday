@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Sayang ❤️</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body>
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen">
+      <div class="splash-content">
+        <img
+          src="asset/img/splash-photo.jpg"
+          alt="Selamat Datang"
+          class="splash-image"
+          onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZmZlZWY4Ii8+CjxyZWN0IHg9IjUwIiB5PSI3NSIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxNTAiIHJ4PSIyMCIgZmlsbD0iI2ZmOWE5ZSIgb3BhY2l0eT0iMC4zIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNkNjMzODQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZvdG8gU3Blc2lhbDwvdGV4dD4KPHRleHQgeD0iMjAwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iI2Q2MzM4NCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S2xpayB1bnR1ayBsYW5qdXQhPC90ZXh0Pgo8L3N2Zz4='"
+        />
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container hidden">
+      <h1 class="title">Sugeng Ambal Warsa Tresnaku</h1>
+
+      <div class="cake-container">
+        <!-- Main penguin cake image -->
+        <div class="cake-image">
+          <img
+            src="asset/img/penguin-cake.png"
+            alt="Penguin Birthday Cake"
+            class="main-cake"
+          />
+
+          <!-- Interactive candle flames positioned over the cake -->
+          <div class="candle-flames">
+            <div
+              class="flame-wrapper"
+              data-content="1"
+              style="left: 69.1%; top: 7%"
+            >
+              <div
+                class="flame interactive-flame"
+                onclick="blowCandle(1)"
+              ></div>
+              <div class="smoke hidden"></div>
+            </div>
+            <div
+              class="flame-wrapper"
+              data-content="2"
+              style="left: 73%; top: 7%"
+            >
+              <div
+                class="flame interactive-flame"
+                onclick="blowCandle(2)"
+              ></div>
+              <div class="smoke hidden"></div>
+            </div>
+            <div
+              class="flame-wrapper"
+              data-content="3"
+              style="left: 76.6%; top: 7%"
+            >
+              <div
+                class="flame interactive-flame"
+                onclick="blowCandle(3)"
+              ></div>
+              <div class="smoke hidden"></div>
+            </div>
+            <div
+              class="flame-wrapper"
+              data-content="4"
+              style="left: 80.3%; top: 7%"
+            >
+              <div
+                class="flame interactive-flame"
+                onclick="blowCandle(4)"
+              ></div>
+              <div class="smoke hidden"></div>
+            </div>
+            <div
+              class="flame-wrapper"
+              data-content="5"
+              style="left: 84.1%; top: 7%"
+            >
+              <div
+                class="flame interactive-flame"
+                onclick="blowCandle(5)"
+              ></div>
+              <div class="smoke hidden"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="instruction">
+        Klik apinya buat tiup lilinnya yaaaaaaaaaaaaa 🕯️
+      </p>
+    </div>
+
+    <!-- Modal untuk konten -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Audio element untuk musik -->
+    <audio id="birthdayMusic" preload="auto">
+      <source src="asset/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
