@@ -280,7 +280,7 @@ window.addEventListener("load", function () {
 // Add balloon effects
 function createBalloon() {
   const balloon = document.createElement("div");
-  const balloonColors = ["🎈", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍"];
+  const balloonColors = ["ðŸŽˆ", "â¤ï¸", "ðŸ§¡", "ðŸ’›", "ðŸ’š", "ðŸ’™", "ðŸ’œ", "ðŸ–¤", "ðŸ¤"];
   const randomColor =
     balloonColors[Math.floor(Math.random() * balloonColors.length)];
 
